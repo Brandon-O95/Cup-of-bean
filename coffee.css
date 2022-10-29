@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* navbar section */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fefefe;
+  width: 100%;
+  padding: 1.7rem;
+  position: fixed;
+  border-bottom: 1px solid black;
+  z-index: 1;
+}
+
+.logo {
+  font-size: 1.8rem;
+}
+
+.logo, .options, .checkout, .login {
+  text-decoration: none;
+  color: black;
+}
+
+.options {
+  margin: 8px;
+}
+
+.shopping-cart-icon {
+  height: 30px;
+}
+
+.search-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  margin-left: 1.3rem;  
+}
+
+/* Main Section */
+
+.main-bg {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(2, 2, 2, 0.3)), url('https://images.unsplash.com/photo-1542181961-9590d0c79dab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.header-quote {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  flex-direction: column;
+  top: 38%;
+  right: -65%;
+  width: 100%;
+  max-width: 600px;
+  line-height: 2;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+span {
+  position: relative;
+  left: -5%;
+}
+
+.shopnow {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  font-size: 16px;
+  padding: 10px 65px 10px 65px;
+  border-radius: 5px;
+  box-shadow: 15px 12px 26px -10px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 15px 12px 26px -10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 15px 12px 26px -10px rgba(0,0,0,0.75);
+}
+
+.logoicon {
+  margin-right: 7px;
+}
+
+/* Discount Div Card */
+
+.discount-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -10%;
+  left: 8%;
+  width: 600px;
+  padding: 3rem;
+  height: auto;
+  background-color: #e5e5e5;
+  border-radius: 20px;
+  box-shadow: 20px 22px 28px -9px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 20px 22px 28px -9px rgba(0,0,0,0.75);
+  -moz-box-shadow: 20px 22px 28px -9px rgba(0,0,0,0.75);
+  transition: width 300ms;
+}
+
+.discount-container:hover {
+  width: 900px;
+  
+}
+
+.discount-img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  box-shadow: 20px 22px 28px -9px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 20px 22px 28px -9px rgba(0,0,0,0.75);
+  -moz-box-shadow: 20px 22px 28px -9px rgba(0,0,0,0.75);
+}
+
+h2 {
+  margin: 25px 0 10px 0;
+  font-size: 32px;
+}
+
+.discount {
+  font-size: 37px;
+  color: #bc4749;
+  position: relative;
+  left: 1px;
+  margin-right: 5px;
+}
+
+.order-now-button {
+  background-color: #bc4749;
+  text-decoration: none;
+  color: white;
+  padding: 10px 60px 10px 60px;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 15px 12px 26px -10px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 15px 12px 26px -10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 15px 12px 26px -10px rgba(0,0,0,0.75);
+}
+
+/* Gift ad Details */
+
+.gift-deals {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 140px;
+  background-color: #faf0ca;
+}
+
+.gift-title {
+  color: black;
+  font-size: 32px;
+}
+
+.gift-details {
+  color: black;
+}
+
+a.details-link {
+  color: black;
+  text-decoration-color: black;
+}
+
+/* Creamers and Coffee */
+
+/* h4 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: rgb(0, 0, 0);
+}
+
+.creamers {
+  width: 100%;
+  background: url('https://images.unsplash.com/photo-1453614512568-c4024d13c247?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80');
+  background-size: cover;
+}
+
+.creamers-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.creamers-card-img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  box-shadow: 15px 12px 26px -10px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 15px 12px 26px -10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 15px 12px 26px -10px rgba(0,0,0,0.75);
+  margin-bottom: 20px;
+}
+
+.creamers-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 500px;
+  margin-left: 10px;
+  background-color: #ebebeb;
+  border-radius: 20px;
+  padding: 20px 0 20px 0;
+  box-shadow: 15px 12px 26px -10px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 15px 12px 26px -10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 15px 12px 26px -10px rgba(0,0,0,0.75);
+}
+
+.creamers-title {
+  font-size: 30px;
+}
+
+.creamers-button {
+  text-decoration: none;
+  color: white;
+  background-color: #bc4749;
+  padding: 10px 60px 10px 60px;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 15px 12px 26px -10px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 15px 12px 26px -10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 15px 12px 26px -10px rgba(0,0,0,0.75);
+  margin-top: 20px;
+} */
